@@ -49,10 +49,6 @@ defaults:
       path: "pages"
     values:
       order: 10
-  - scope:
-      path: ""
-    values:
-      layout: no-style-2
 
 # defaults explained:
 # 1. static images are in assets/img/*
