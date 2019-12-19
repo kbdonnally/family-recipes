@@ -1,0 +1,36 @@
+---
+---
+
+/* Styles */
+
+// Directories:
+// 1. _layouts --> most general styles, apply to >1 page
+// 2. _nav ------> header, footer styles
+// 3. _pages ----> page-specific styles (docname = page name)
+// 4. _vars -----> Sass variables for colors & font names
+
+// Imports:
+// - Purpose: puts together all tiny files into big file
+// - Syntax:  '_dir/_filename.scss' -> @import '_dir/filename'
+// - Order:   least-to-most specific, so cascade flows properly
+//            (NB: vars first b/c can't invoke b/f define)
+
+// syntax highlighting:
+// @import '_syntax-schemes/atom-one-dark';
+// @import '_syntax-schemes/dracula';
+@import '_syntax-schemes/ir-black';
+// @import '_syntax-schemes/monokai-sublime';
+
+
+
+
+// vars:
+@import '_vars/colors';
+@import '_vars/fonts';
+
+// layouts:
+@import '_layouts/basics-1';
+
+// pages:
+@import '_pages/blog-post';
+@import '_pages/magic-kitties';
