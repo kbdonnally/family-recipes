@@ -1,10 +1,10 @@
 # 1. metadata
-title: Assets
+title: Family Recipes
 baseurl: "/family-recipes"
 url: "http://katherinedoes.design" # the base hostname & protocol for your site, e.g. http://example.com
 
 description: >- 
-  Digitized versions of family recipes for all of us to see.
+  Digitized versions of family recipes for all of us to see and use.
 
 # 2. build settings
 incremental: true
