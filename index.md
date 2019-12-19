@@ -1,6 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: no-style
 ---
+
+# Family Recipes
+
+{% for page in site.pages %}
+{% if page.title %}
+- [{{ page.title }}]({{ page.url | relative_url }})
+{% endif %}
+{% endfor %}
