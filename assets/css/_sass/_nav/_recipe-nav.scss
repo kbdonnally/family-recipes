@@ -1,12 +1,11 @@
 /* Recipe Page Navigation: */
 
-body {
-	margin: 0;
-}
-
 .recipe-nav-wrapper {
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 	height: 60px;
+	width: 100%;
 	background-color: lightblue;
 }
 
@@ -60,9 +59,10 @@ body {
 // a
 .recipe-home__link, 
 .recipe-item__link {
+	text-transform: uppercase;
 	border: 0px;
 	color: white;
-	text-shadow: 0 0 1px hsla(0, 0, 0, .3);
+	text-shadow: 0 0 1px hsla(0, 0, 0, .35);
 	&:hover, &:focus {
 		color: $darkgunmetal;
 	}

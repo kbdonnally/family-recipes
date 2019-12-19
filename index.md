@@ -4,6 +4,8 @@ layout: no-style
 
 {% include recipe-nav.html %}
 
+<main class="family-recipes-home" markdown="1">
+
 # Family Recipes
 
 {% assign pages = site.pages | sort: 'order' %}
@@ -12,4 +14,6 @@ layout: no-style
 - [{{ page.title }}]({{ page.url | relative_url }})
 {% endif %}
 {% endfor %}
+
+</main>
 
