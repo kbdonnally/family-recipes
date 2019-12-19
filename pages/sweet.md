@@ -1,10 +1,12 @@
 ---
-title: Savory Recipes
+title: Sweet Recipes
+nav-name: Sweet
 layout: no-style
-permalink: /savory/
+permalink: /sweet/
+order: 2
 ---
 
-# Savory Recipes
+# Sweet Recipes
 
 ```
 insert list of savory recipes here

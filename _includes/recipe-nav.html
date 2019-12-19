@@ -1,0 +1,19 @@
+<nav class="recipe-nav-wrapper">
+	<ul class="recipe-nav__link-wrapper">
+		<li class="recipe-nav__home">
+			<a class="recipe-home__link" href="{{ site.url }}{{ site.baseurl}}">Home</a>
+		</li>
+		<li class="recipe-nav__list-wrapper">
+			<ul class="recipe-nav__list">
+				{% assign pages = site.pages | sort: 'order' %}
+				{% for page in pages %}
+				{% if page.order <= 3 %}
+				<li class="recipe-nav__list-item">
+					<a class="recipe-item__link" href="{{ page.url | relative_url }}">{{page.nav-name}}</a>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
+		</li>
+	</ul>
+</nav>
