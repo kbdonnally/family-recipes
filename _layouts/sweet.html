@@ -1,0 +1,27 @@
+---
+layout: no-style
+---
+
+{% include recipe-nav.html %}
+
+<main class="family-recipes-recipe" markdown="1">
+
+<h1>{{ page.title }}</h1>
+
+<h3>Source: {{ page.source }}</h3>
+
+<h3>Ingredients:</h3>
+
+<ul>
+{% for ingredient in page.ingredients %}
+	<li>{{ ingredient }}</li>
+{% endfor %}
+</ul>
+
+<h3>Directions:</h3>
+
+{{ content }}
+
+</main>
+
+{% include recipe-footer.html %}

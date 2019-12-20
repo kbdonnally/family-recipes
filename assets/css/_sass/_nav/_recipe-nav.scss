@@ -1,12 +1,14 @@
 /* Recipe Page Navigation: */
 
 .recipe-nav-wrapper {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 60px;
 	width: 100%;
 	background-color: lightblue;
+	border-bottom: 2px solid $darkgunmetal;
+	z-index: 10;
 }
 
 // ul
@@ -60,11 +62,11 @@
 .recipe-home__link, 
 .recipe-item__link {
 	text-transform: uppercase;
-	border-bottom: 1px solid $darkgunmetal;
-	color:  $darkgunmetal;
+	border-bottom: 1px solid white;
+	color:  white;
 	text-shadow: 0 0 1px hsla(0, 0, 0, .35);
 	&:hover, &:focus {
-		color: white; //$darkgunmetal;
-		border-color: white;
+		color: $darkgunmetal;
+		border-color: $darkgunmetal;
 	}
 }
