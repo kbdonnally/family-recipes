@@ -6,6 +6,7 @@ key-flavors: [chocolate, peanut butter]
 image: null
 time: null
 layout: sweet
+type: sweet
 slug: crunchy-fudge-sandwiches
 ---
 

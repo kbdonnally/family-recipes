@@ -4,11 +4,18 @@ layout: no-style
 
 {% include recipe-nav.html %}
 
-<main class="family-recipes-recipe" markdown="1">
+<main class="family-recipes-recipe">
+
+<h3>Recipes // <a href="{{ '/sweet' | relative_url }}">{{ page.type }}</a></h3>
 
 <h1>{{ page.title }}</h1>
 
 <h3>Source: {{ page.source }}</h3>
+
+<em>Time: {{ page.time }}</em><br/>
+<em>Yield: {{ page.yield }}</em>
+
+<hr/>
 
 <h3>Ingredients:</h3>
 
