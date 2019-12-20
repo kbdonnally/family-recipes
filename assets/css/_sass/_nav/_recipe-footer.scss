@@ -15,14 +15,20 @@
 // ul
 .recipe-footer__list {
 	position: relative;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-areas: 'sweet savory index home';
+	display: flex;
+	justify-content: space-around;
 	align-items: center;
-	justify-content: center;
-	height: 30vh;
+	min-height: 30vh;
 	margin: 0 auto;
 	padding-left: 0;
+	@media screen and (max-width: 550px) {
+		flex-flow: column nowrap;
+		justify-content: center;
+		li {
+			padding: .5em 0;
+		}
+		padding: 1em 0;
+	}
 }
 
 // li

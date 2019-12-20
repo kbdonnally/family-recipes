@@ -60,10 +60,11 @@
 .recipe-home__link, 
 .recipe-item__link {
 	text-transform: uppercase;
-	border: 0px;
-	color: white;
+	border-bottom: 1px solid $darkgunmetal;
+	color:  $darkgunmetal;
 	text-shadow: 0 0 1px hsla(0, 0, 0, .35);
 	&:hover, &:focus {
-		color: $darkgunmetal;
+		color: white; //$darkgunmetal;
+		border-color: white;
 	}
 }
