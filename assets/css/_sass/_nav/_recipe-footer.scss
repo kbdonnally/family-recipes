@@ -1,0 +1,63 @@
+/* Goes with recipe-footer.html */
+
+.family-recipes-home {
+	min-height: 75vh;
+}
+
+// footer
+.recipe-footer-wrapper {
+	position: relative;
+	min-width: 30vh;
+	width: 100%;
+	background-color: $lightblue;
+}
+
+// ul
+.recipe-footer__list {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 'sweet savory index home';
+	align-items: center;
+	justify-content: center;
+	height: 30vh;
+	margin: 0 auto;
+	padding-left: 0;
+}
+
+// li
+.recipe-footer__list-item {
+	&::before {
+		display: none;
+	}
+	display: flex;
+	justify-content: center;
+	a {
+		border-bottom: 1px solid $darkgunmetal;
+		text-transform: uppercase;
+		text-shadow: 0 0 1px hsla(0,0,0,.35);
+		color: $darkgunmetal;
+		font-size: 18px;
+		&:hover, &:focus {
+			color: white;
+			border-color: white !important;
+		}
+	}
+	
+}
+
+.list-item--sweet {
+	grid-area: sweet;
+}
+
+.list-item--savory {
+	grid-area: savory;
+}
+
+.list-item--index {
+		grid-area: index;
+}
+
+.list-item--home {
+	grid-area: home;
+}

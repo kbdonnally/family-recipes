@@ -17,4 +17,4 @@ layout: no-style
 
 </main>
 
-{% include recipe-nav.html %}
+{% include recipe-footer.html %}
