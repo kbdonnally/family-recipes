@@ -4,3 +4,20 @@ body {
 	margin: 0;
 	padding-top: 60px;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	color: $darkgunmetal;
+}
+
+a {
+	color: $halfgray;
+	border-bottom: 1px solid $razzmic-berry;
+	&:hover, &:focus {
+		color: $razzmic-berry;
+		border-bottom: 1px solid $razzmic-berry;
+	}
+}
+
+ul {
+	padding-left: 0;
+}
